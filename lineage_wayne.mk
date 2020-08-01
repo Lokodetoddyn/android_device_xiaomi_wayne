@@ -26,8 +26,15 @@ $(call inherit-product, device/xiaomi/wayne/device.mk)
 
 # Inherit Sakura product configuration
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+# Sakura Version
 SAKURA_OFFICIAL := true
+
+# Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
+
+# Use launcher stuffs
+LAWNCHAIR_OUTPUT=true
 
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
