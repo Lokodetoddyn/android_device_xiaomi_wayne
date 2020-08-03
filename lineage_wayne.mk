@@ -34,7 +34,7 @@ SAKURA_OFFICIAL := true
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Use launcher stuffs
-LAWNCHAIR_OUTPUT=true
+LAWNCHAIR_OPTOUT := true
 
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
