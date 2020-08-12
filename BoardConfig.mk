@@ -33,7 +33,7 @@ TARGET_HW_DISK_ENCRYPTION := true
 TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
+TARGET_KERNEL_SOURCE := kernel/xiaomi/wayne
 TARGET_KERNEL_CONFIG := wayne_defconfig
 
 # Manifest
@@ -47,6 +47,3 @@ VENDOR_SECURITY_PATCH := 2020-04-05
 
 # WLAN MAC
 WLAN_MAC_SYMLINK := true
-
-# SELinux
-SELINUX_IGNORE_NEVEALLOWS := true
