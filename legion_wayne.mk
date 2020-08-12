@@ -27,6 +27,9 @@ $(call inherit-product, device/xiaomi/wayne/device.mk)
 # Inherit Legion product configuration
 $(call inherit-product, vendor/legion/config/common_full_phone.mk)
 
+# Official Flag
+LEGION_BUILD_TYPE := OFFICIAL
+
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
