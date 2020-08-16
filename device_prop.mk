@@ -100,4 +100,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Cpu
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.processor.model=Snapdragon_660
+    ro.processor.model=Qualcomm_SDM660
