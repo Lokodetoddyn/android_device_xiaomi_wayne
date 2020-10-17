@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2020 The Xiaomi-SDM660 Project
+# Copyrught (C) 2020 THe Statix OS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,17 +25,11 @@
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/wayne/device.mk)
 
-# Inherit Sakura product configuration
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-
-# Sakura Version
-SAKURA_OFFICIAL := true
+# Inherit Statix product configuration
+$(call inherit-product, vendor/statix/config/common.mk)
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
-
-# Use launcher stuffs
-LAWNCHAIR_OPTOUT=true
 
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
@@ -46,6 +41,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := lineage_wayne
+PRODUCT_NAME := statix_wayne
 PRODUCT_DEVICE := wayne
 PRODUCT_MODEL := MI 6X
