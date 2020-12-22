@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2018 The Xiaomi-SDM660 Project
+# Copyright (C) 2020 The Project-LegionOS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -93,8 +94,8 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, vendor/xiaomi/wayne-common/wayne-common-vendor.mk)
 
 # AOSP DEVICE
-PRODUCT_NAME := aosp_wayne
+PRODUCT_NAME := legion_wayne
 PRODUCT_DEVICE := wayne
-PRODUCT_MODEL := Mi 6X (AOSP)
+PRODUCT_MODEL := Mi 6X
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi

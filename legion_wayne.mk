@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2018 The Xiaomi-SDM660 Project
+# Copyright (C) 2020 The Project-LegionOS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,8 +25,8 @@
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/wayne/device.mk)
 
-# Inherit some common statix stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common LegionOS stuff.
+$(call inherit-product, vendor/legion/config/common_full_phone.mk)
 
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
@@ -34,10 +35,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="wayne-user 9 PKQ1.180904.001 V10.3.4.0.PDCCNXM release-keys"
 
+# LegionOS Device Maintainers
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.maintainer.name=Lokodetoddyn
+
+# Boot Animation Resolution
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Play bold Play wild
+LEGION_BUILD_TYPE := OFFICIAL
+
+# Gapps Architecture
+TARGET_GAPPS_ARCH := arm64
+
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := aosp_wayne
+PRODUCT_NAME := legion_wayne
 PRODUCT_DEVICE := wayne
 PRODUCT_MODEL := MI 6X
-TARGET_BOOT_ANIMATION_RES := 1080x2160
