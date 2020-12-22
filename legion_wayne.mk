@@ -45,8 +45,10 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # Play bold Play wild
 LEGION_BUILD_TYPE := OFFICIAL
 
-# Gapps Architecture
+# Gapps Sector
+WITH_GAPPS=true
 TARGET_GAPPS_ARCH := arm64
+IS_PHONE := true
 
 # Device identifier
 PRODUCT_BRAND := Xiaomi
