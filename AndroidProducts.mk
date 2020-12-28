@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2018 The Xiaomi-SDM660 Project
-# Copyright (C) 2020 The Project-LegionOS
+# Copyright (C) 2020 The Project Sakura
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,9 +24,9 @@
 
 # Inherit MI 6X LegionOS device config
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/legion_wayne.mk
+    $(LOCAL_DIR)/lineage_wayne.mk
 
 COMMON_LUNCH_CHOICES := \
-    legion_wayne-eng \
-    legion_wayne-userdebug \
-    legion_wayne-user
+    lineage_wayne-eng \
+    lineage_wayne-userdebug \
+    lineage_wayne-user

@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2018 The Xiaomi-SDM660 Project
+# Copyright (C) 2020 The Project Sakura
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -47,3 +48,6 @@ VENDOR_SECURITY_PATCH := 2020-11-01
 
 # WLAN MAC
 WLAN_MAC_SYMLINK := true
+
+# SELinux
+SELINUX_IGNORE_NEVEALLOWS := true
