@@ -38,11 +38,19 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Boot Animation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Sakyra build type
+# Sakura build type
 SAKURA_OFFICIAL := true
 
-# Use launcher stuffs
-LAWNCHAIR_OPTOUT := true
+# Gapps Sector
+SAKURA_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+IS_PHONE := true
+
+# Maintainer Sector
+SAKURA_MAINTAINER := Lokodetoddyn
+
+# FaceUnlock Sector
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Device identifier
 PRODUCT_BRAND := Xiaomi
